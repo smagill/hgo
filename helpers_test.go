@@ -32,7 +32,7 @@ func createRepo(t testing.TB, commands []string) string {
 		cmd.Dir = dir
 		out, err := cmd.CombinedOutput()
 		if err != nil {
-			t.Fatalf("Command %q failed. Output was:\n\n%s", cmd, out)
+			t.Fatalf("Command %q failed. Output was:\n\n%s", command, out)
 		}
 	}
 

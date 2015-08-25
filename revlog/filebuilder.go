@@ -174,8 +174,6 @@ func (p *FileBuilder) PreparePatch(r *Rec) (f *FilePatch, err error) {
 		}
 		r = r.Prev()
 	}
-	panic("not reached")
-
 }
 
 func scanMetaData(d []byte) (meta []byte) {
